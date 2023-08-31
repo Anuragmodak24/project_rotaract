@@ -1,5 +1,5 @@
 import React from "react";
-// import pic1 from "../Images/img3.jpeg";
+import pic1 from "../Images/img3.jpeg";
 import { Header } from "./Header";
 export const Nav = () => {
   return (
@@ -12,10 +12,10 @@ export const Nav = () => {
           <a href="/" className="logo d-flex align-items-center">
             {/* Uncomment the line below if you also wish to use an image logo */}
             {/* <img src="assets/img/logo.png" alt=""> */}
-            {/* <img src={pic1} alt="logo" /> */}
-            <h1>
+            <img src={pic1} alt="logo" />
+            {/* <h1>
               Rotaract(Dremers and Doers)<span>.</span>
-            </h1>
+            </h1> */}
           </a>
           <nav id="navbar" className="navbar order-last order-lg-0">
             <ul>
@@ -64,14 +64,46 @@ export const Nav = () => {
             id="offcanvasTop"
             aria-labelledby="offcanvasTopLabel">
             <div className="offcanvas-header">
-              <h5 id="offcanvasTopLabel">Offcanvas top</h5>
+              <h5 id="offcanvasTopLabel"> 
+              <h1>
+              Rotaract(Dremers and Doers)
+            </h1></h5>
               <button
                 type="button"
                 className="btn-close text-reset"
                 data-bs-dismiss="offcanvas"
                 aria-label="Close"></button>
             </div>
-            <div className="offcanvas-body">...</div>
+            <div className="offcanvas-body"> 
+            <ul style={{listStyleType:"none"}}>
+              <li>
+                <a href="/">Home</a>
+              </li>
+              <li>
+                <a href="/aboutus">About</a>
+              </li>
+              <li>
+                <a href="/ongoingpro">On Going Projects</a>
+              </li>
+              <li>
+                <a href="/ourteam">Team</a>
+              </li>
+              <li>
+                <a href="/notice">Notice</a>
+              </li>
+              <li>
+                <a href="/gallery">Gallery</a>
+              </li>
+              <li>
+                <a href="/contactus">Contact</a>
+              </li>
+              <li>
+                <a href="/signup" >Register Here</a>
+              </li>
+              <li>
+                <a href="/donor" >Donate Here</a>
+              </li>
+            </ul></div>
           </div>
         </div>
       </header>
