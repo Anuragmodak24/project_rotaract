@@ -19,4 +19,21 @@ route.post("/donate", async(req,res) => {
         res.status(404).send(error.message)
     }
 });
+
+
+route.get('/donate',async(req,res)=>{
+    try {
+        const getDonor = await Donor.find()
+        res.status(200).send({ Donor : getDonor });
+    } catch (error) {
+        res.status(500).send({ message:error.message });
+    }
+});
+
+
+
+
+
+
+
 module.exports = route;

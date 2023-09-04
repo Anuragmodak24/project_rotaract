@@ -22,6 +22,13 @@ export const Signup=()=>{
   const handleSign=(e)=>{
     e.preventDefault()
     uploadData(user)
+    setUser({
+      name:"",
+      email:"",
+      password:"",
+    })
+
+   
   }
   const uploadData=(user)=>{
      axios.post("http://127.0.0.1:8001/v1/api/signup",user)
