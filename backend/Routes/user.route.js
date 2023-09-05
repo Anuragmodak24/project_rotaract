@@ -54,4 +54,17 @@ route.post("/login", async (req, res) => {
   }
 });
 
+route.get('/signup',async(req,res)=>{
+  try {
+      const getSign = await User.find()
+      res.status(200).send({ User : getSign });
+  } catch (error) {
+      res.status(500).send({ message:error.message });
+  }
+});
+
+
+
+
+
 module.exports = route;

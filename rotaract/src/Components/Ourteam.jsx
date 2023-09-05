@@ -24,8 +24,8 @@ export const Ourteam =()=>{
                 className="img-fluid"
                 alt=""
               />
-              <h4>Walter White</h4>
-              <span>Web Development</span>
+              <h4>Anaya Chatterjee</h4>
+              <span>President</span>
               <div className="social">
                 <a href="">
                   <i className="bi bi-twitter" />
@@ -54,8 +54,8 @@ export const Ourteam =()=>{
                 className="img-fluid"
                 alt=""
               />
-              <h4>Sarah Jhinson</h4>
-              <span>Marketing</span>
+              <h4>Amitava Sarkar</h4>
+              <span>Cashier</span>
               <div className="social">
                 <a href="">
                   <i className="bi bi-twitter" />
@@ -84,8 +84,8 @@ export const Ourteam =()=>{
                 className="img-fluid"
                 alt=""
               />
-              <h4>William Anderson</h4>
-              <span>Content</span>
+              <h4>Subhasmit Bhowmik </h4>
+              <span>Secretary</span>
               <div className="social">
                 <a href="">
                   <i className="bi bi-twitter" />
@@ -114,8 +114,8 @@ export const Ourteam =()=>{
                 className="img-fluid"
                 alt=""
               />
-              <h4>Amanda Jepson</h4>
-              <span>Accountant</span>
+              <h4>Amartya Ghosh Dastidar</h4>
+              <span>Asst. Secretary</span>
               <div className="social">
                 <a href="">
                   <i className="bi bi-twitter" />
