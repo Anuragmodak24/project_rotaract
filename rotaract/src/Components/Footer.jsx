@@ -40,6 +40,7 @@ export const Footer =()=>{
         <div className="col-lg-2 col-6 footer-links">
           <h4>Useful Links</h4>
           <ul>
+          <ul>
               <li>
                 <a href="/">Home</a>
               </li>
@@ -62,8 +63,12 @@ export const Footer =()=>{
                 <a href="/contactus">Contact</a>
               </li>
               <li>
-                <a href="/register" >Register Hare</a>
+                <a href="/donor" >Donate Here</a>
               </li>
+              <li>
+                <a href="/signup" >Register Here</a>
+              </li>
+            </ul>
             </ul>
         
         </div>

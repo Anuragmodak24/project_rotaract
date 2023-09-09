@@ -10,6 +10,7 @@ import { Gallery } from "./Components/Gallery";
 import { Notice } from "./Components/notice";
 import { Signup } from "./Components/Registerhare";
 import { Donate } from "./Components/donor";
+import ImageUpload from "./Components/Payment";
 
 export const AllRoutes =()=>{
 
@@ -26,6 +27,7 @@ export const AllRoutes =()=>{
     <Route path={"/notice"} element={<Notice/>}/>
     <Route path={"/gallery"} element={<Gallery/>}/>
     <Route path={"/donor"} element={<Donate/>}/>
+    <Route path={"/payment"} element={<ImageUpload/>}/>
 
      </Routes>
         </>

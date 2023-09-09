@@ -23,8 +23,16 @@ const donorSchema = new Schema({
     },
     address:{
         type:String,
-        require:true
-    }
+        require:true        
+    },
+    donation:{
+        type:String,
+        require:true       
+    },
+    paymentScreenshot: {
+        type: String,
+      }
+
 },{timestamps:true});
 const Donor = model ('donate' ,donorSchema);
 module.exports = Donor

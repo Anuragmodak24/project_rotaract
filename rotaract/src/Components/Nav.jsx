@@ -41,10 +41,10 @@ export const Nav = () => {
                 <a href="/contactus">Contact</a>
               </li>
               <li>
-                <a href="/signup" >Register Here</a>
+                <a href="/donor" >Donate Here</a>
               </li>
               <li>
-                <a href="/donor" >Donate Here</a>
+                <a href="/signup" >Register Here</a>
               </li>
             </ul>
           </nav>
@@ -67,7 +67,8 @@ export const Nav = () => {
               <h5 id="offcanvasTopLabel"> 
               <h1>
               Rotaract(Dremers and Doers)
-            </h1></h5>
+            </h1>
+            </h5>
               <button
                 type="button"
                 className="btn-close text-reset"

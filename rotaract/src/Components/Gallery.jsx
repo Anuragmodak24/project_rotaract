@@ -3,7 +3,7 @@ export const Gallery =()=>{
     return(
         <>
    {/* ======= Gallery Section ======= */}
-   <section id="gallery" className="gallery">
+   <section id="gallery" className="gallery" >
       <div className="container">
         <div className="section-title">
           <h2>Gallery</h2>
@@ -12,7 +12,7 @@ export const Gallery =()=>{
           </p>
         </div>
       </div>
-      <div className="container-fluid">
+      <div className="container-fluid" >
         <div className="row g-0">
           <div className="col-lg-3 col-md-4">
             <div className="gallery-item">

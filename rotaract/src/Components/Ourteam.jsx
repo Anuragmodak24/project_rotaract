@@ -117,16 +117,16 @@ export const Ourteam =()=>{
               <h4>Amartya Ghosh Dastidar</h4>
               <span>Asst. Secretary</span>
               <div className="social">
-                <a href="">
+                <a href="/">
                   <i className="bi bi-twitter" />
                 </a>
-                <a href="">
+                <a href="/">
                   <i className="bi bi-facebook" />
                 </a>
-                <a href="">
+                <a href="/">
                   <i className="bi bi-instagram" />
                 </a>
-                <a href="">
+                <a href="/">
                   <i className="bi bi-linkedin" />
                 </a>
               </div>

@@ -27,9 +27,9 @@ export const Newregister = () => {
   try {
     let res=await axios.post("http://127.0.0.1:8001/v1/api/login",data)
     alert(res.data.message)
-    localStorage.setItem("Token",res.data.user);
+    localStorage.setItem("Token",res.data.token);
     setTimeout(()=>{
-      navigate("/")
+      navigate("/donor")
     },1500)
   } catch (error) {
     alert(error.message);

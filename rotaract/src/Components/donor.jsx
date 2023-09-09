@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import {useNavigate} from 'react-router'
 
 const year = ['1900','1991','1992','1993','1994','1995','1996','1997','1998','1999','2000','2001','2002','2003','2004','2005','2006','2007','2008','2009','2010','2011','2012','2013','2014','2015','2016','2017','2018','2019','2020','2021','2022','2023']
 const donorData=(donor)=>{
@@ -9,6 +10,7 @@ const donorData=(donor)=>{
 .catch((err)=> alert(err.message))
 }
 export const Donate = () => {
+  const navigate=useNavigate()
     const [donor, setDonor] = useState({
         name: "",
         gender:"",
@@ -16,7 +18,9 @@ export const Donate = () => {
         mobile:"",
         email: "",
         address: "",
+        donation:"",
       });
+      
 
     const handleInput = (e) => {
       const {name,value}=e.target
@@ -26,6 +30,7 @@ export const Donate = () => {
     const handleSign = (e) => {
       e.preventDefault()
       donorData(donor)
+    //  console.log(donor)
       setDonor({
         name: "",
         gender:"",
@@ -33,7 +38,12 @@ export const Donate = () => {
         mobile:"",
         email: "",
         address: "",
-      })
+        donation:"",
+        
+      });
+      setTimeout(()=>{
+        navigate("/payment")
+      },1500)
     }
 
     return(
@@ -55,6 +65,30 @@ export const Donate = () => {
             value={donor.name}
           />
         </div>
+
+        <div className="mb-3" style={{ display: 'flex', flexDirection: 'row', alignItems: 'center' ,gap: '10px'}}>
+  <label htmlFor="choose_option">Choose what you want:</label>
+  <input
+    type="radio"
+    id="donate_option"
+    name="donation"
+    value="doner"
+    defaultValue="donate"
+    onChange={handleInput}
+  />
+  <label htmlFor="donate_option" style={{ marginRight: '10px' }}>Donate without membership</label>
+  <input
+    type="radio"
+    id="member_option"
+    name="donation"
+    value="member"
+    defaultValue="become_member"
+    onChange={handleInput}
+  />
+  <label htmlFor="member_option" style={{ marginLeft: '10px' }}>Become a member</label>
+</div>
+
+
         <div   className="form-label">
         <label htmlFor="inputGender4">Gender</label>
         <select

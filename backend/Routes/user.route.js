@@ -1,7 +1,7 @@
 const express = require("express");
 const User = require("../Models/user.model.js");
 const bcrypt = require("bcrypt");
-const jwt = require("jsonwebtoken");
+
 
 const route = express.Router();
 
@@ -32,20 +32,10 @@ route.post("/login", async (req, res) => {
     const compPass = await bcrypt.compare(password, isEmailPresent.password); //  comparing the password
     if (compPass) {
       // const { password , ...otherdata} = isEmailPresent.toObject()
-      const token = jwt.sign(
-        {
-          id: isEmailPresent._id,
-          name: isEmailPresent.name,
-          email: isEmailPresent.email,
-        },
-        "ANURAG1234",
-        {
-          expiresIn: "28days",
-        }
-      );
+      
       
       //  res.status(200).send({ message: "Login Success", User: otherdata });
-      res.status(200).send({ message: "Login Success", User: token });
+      res.status(200).send({ message: "Login Success" });
     } else {
       res.status(404).send("Invalid Password");
     }
